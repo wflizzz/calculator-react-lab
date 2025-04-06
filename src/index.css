@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 1024px) {
+  .max-w-xs {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-w-xs {
+    max-width: 90%;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .max-w-xs {
+    max-width: 100%;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
